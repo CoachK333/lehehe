@@ -1,0 +1,15 @@
+
+server:
+  port: 2222
+  servlet:
+    context-path: /
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/helloworld?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: 1234
